@@ -25,6 +25,11 @@
         <equal>com.apple.DVDPlayer</equal>
     </appdef>
 
+    <appdef>
+        <appname>Preview</appname>
+        <equal>com.apple.Preview</equal>
+    </appdef>
+
     <item>
         <name>R700 for Keynote</name>
         <identifier>private.R700_for_keynote</identifier>
@@ -46,6 +51,29 @@
             KeyCode::P, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
         </autogen>
     </item>
+
+    <item>
+        <name>R400 for Preview</name>
+        <identifier>private.R4000_for_preview</identifier>
+        <only>Preview</only>
+        <device_only>DeviceVendor::LOGITECH, DeviceProduct::LOGITECH_R700</device_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::F5,
+            KeyCode::F, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::PAGEUP,
+            KeyCode::CURSOR_LEFT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::PAGEDOWN,
+            KeyCode::CURSOR_RIGHT
+        </autogen>
+    </item>
+
     <item>
         <name>R700 for VLC</name>
         <identifier>private.R700_for_vlc</identifier>
